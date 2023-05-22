@@ -1,0 +1,46 @@
+:root{
+    --size : 1.5rem
+}
+.grid-container{
+    display: grid;
+    gap: .7rem;
+    margin: 0;
+    min-height: calc(100vh - 3rem);
+    justify-content: center;
+}
+
+.tile {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    min-width: var(--size);
+    min-height: var(--size);
+
+    width: var(--size);
+    height: var(--size);
+
+    border: solid;
+    user-select: none;
+    margin: 0;
+    padding: 0;
+}
+
+[data-status="hidden"] {
+    background-color: gray;
+}
+
+[data-status="mine"] {
+    background-color: hsla(0, 100%, 30%);
+}
+
+[data-status="marked"] {
+    background-color: hsla(60, 100%, 30%);
+}
+
+.title {
+    text-align: center;
+}
+
+.text {
+    text-align: center;
+}
