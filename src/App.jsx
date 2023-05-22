@@ -1,4 +1,4 @@
-import React, {useState, useEffect, useRef} from 'react'
+import React, {useState, useEffect } from 'react'
 import './App.css'
 import { createBoard, getMinePositions, checkLose, checkWin, markedTilesCount} from './utils/utils'
 import Board from './components/Board'
@@ -24,7 +24,6 @@ function App() {
     }, [])
 
     useEffect(() => {
-        console.log(board)
         if(board) {
             checkGameEnd(board)
             listMinesLeft(board)
